@@ -1,0 +1,189 @@
+/* -------------------------------- controle container inicio ----------------------- */
+.containerInicio {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--backgroundColorPrincipal);
+  padding: var(--espacoLateralPagina);
+  display: flex;
+  gap: 5em;
+  justify-content: space-around;
+  align-items: center;
+  & .inicioEsquerda {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+  }
+
+  & img {
+    width: 700px;
+    height: auto;
+  }
+}
+/* -------------------------------- caixa esquerda container inicio ----------------- */
+.containerInicio {
+  & .saudacao {
+    color: var(--corTextoDestaque);
+    text-transform: uppercase;
+    font-weight: var(--pesoFonteNegrito);
+    font-size: var(--tamanhoFonteSub1);
+  }
+  & .meuNomeInicio {
+    text-transform: uppercase;
+    font-weight: var(--pesoFonteNegrito);
+    font-size: var(--tamanhoFonteTitulo1);
+  }
+  & .inicioApresentacao {
+    color: var(--corTextoSuporte);s
+    text-align: justify;
+  }
+  & .inicioBotaoContato {
+    padding: var(--espacamentoBotaoPequeno);
+    color: var(--corTextoBotao);
+    background-color: var(--corBotaoFundo);
+    border: var(--bordarBotao);
+    width: fit-content;
+    border-radius: 0.25em;
+    margin-top: 1em;
+  }
+  & .inicioBotaoContato:hover {
+    background-color: var(--corBotaoFundoHover);
+  }
+}
+/* -------------------------------- secao sobre mim --------------------------------- */
+.containerSobreMim {
+  height: 90vh;
+  background-color: var(--backgroundColorSuportePrincipal);
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--espacoLateralPagina);
+  & .saudacaoSobreMim {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: var(--tamanhoFonteSub2);
+    font-weight: var(--pesoFonteNegrito);
+    & i {
+      color: var(--corTextoDestaque);
+    }
+  }
+  & .quemSouEu {
+    width: fit-content;
+    font-size: var(--tamanhoFonteTitulo2);
+    font-weight: var(--pesoFonteNegrito);
+  }
+  & .sobreMimResumo {
+    color: var(--corTextoSuporte);
+    text-align: justify;
+  }
+}
+.caixaSkills {
+  margin: 0 auto;
+  width: 100%;
+  height: 10em;
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+  align-items: center;
+  padding: 0 3.5em;
+  border-radius: .5em;
+  background-color: var(--backgroundColorPrincipal);
+  & i {
+    padding-right: 0.5em;
+  }
+  .skillJs,
+  .skillCss,
+  .skillHtml {
+    background-color: var(--backgroundColorSuportePrincipal);
+    font-size: var(--tamanhoFonteSub2);
+    padding: var(--espacamentoBotaoMedio);
+    border-radius: 0.5em;
+    min-width: fit-content;
+    max-width: 20em;
+    width: 15em;
+    
+    text-align: center;
+  }
+}
+.downloadCvTop {
+  margin: 0 auto;
+  padding: var(--espacamentoBotaoPequeno);
+  color: var(--corTextoBotao);
+  background-color: var(--corBotaoFundo);
+  border: var(--bordarBotao);
+  width: fit-content;
+  border-radius: 0.25em;
+  margin-top: 1em;
+}
+/* -------------------------------- secao projetos texto --------------------------- */
+.containerProjetos {
+    background-color: var(--backgroundColorPrincipal);
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: var(--espacoLateralPagina);
+    & .projetoTextoSub {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      font-weight: var(--pesoFonteNegrito);
+      & i {
+        color: var(--corTextoDestaque);
+      }
+    }
+    & .projetoTitulo {
+      width: fit-content;
+      font-size: var(--tamanhoFonteSub2);
+      font-weight: var(--pesoFonteNegrito);
+    }
+    & .exibicaoProjetos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5em;
+      margin-top: 2.5em;
+      & .caixaProjeto {
+        width: 25em;
+        height: 15em;
+        background-color: var(--backgroundColorSuportePrincipal);
+      }
+    }
+}
+/* -------------------------------- secao contato ---------------------------------- */
+.containerContato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: var(--espacoLateralPagina);
+  & .contatoTexto {
+    width: 50%;
+  }
+  & .contatoTitulo {
+    width: fit-content;
+    font-size:var(--tamanhoFonteSub1);
+    font-weight: var(--pesoFonteNegrito);
+  }
+  & .contatoTextoSub {
+    width: fit-content;
+    color: var(--corTextoSuporte)
+  }
+  & .inicioBotaoContato {
+    padding: var(--espacamentoBotaoPequeno);
+    color: var(--corTextoBotao);
+    background-color: var(--corBotaoFundo);
+    border: var(--bordarBotao);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0.25em;
+    margin-top: 1em;
+  }
+  & .inicioBotaoContato:hover {
+    background-color: var(--corBotaoFundoHover);
+  }
+}

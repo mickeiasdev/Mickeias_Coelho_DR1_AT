@@ -1,0 +1,30 @@
+.cabecalho {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--backgroundColorEscuro);
+  height: 4em;
+  width: 100%;
+  text-transform: uppercase;
+  & img {
+    width: 4em;
+    padding-top: 1em;
+  }
+}
+/* -------------------------------- navegacao ------------------------- */
+
+.navegacao ul {
+  display: flex;
+  & li {
+    display: flex;
+    align-items: center;
+    height: 4em;
+    padding: 0 1em;
+  }
+  & li:hover {
+    transition: 0.25s ease-in-out;
+    background-color: rgba(92, 102, 122, 0.1);
+  }
+}
